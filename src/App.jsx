@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
+import { Button } from 'react-bootstrap';
 
 class App extends Component {
   render() {
     return (
-      <h1>Hello React :)</h1>
+      <div className = "container">
+        <div className = "row">
+          <Button bsStyle="primary" type="submit">
+            Submit
+          </Button>
+        </div>
+      </div>
     );
   }
 }
