@@ -1,23 +1,19 @@
 
-// Min-Width: Refers to everything greater than or equal to the amount given.
-// Max-Width: Refers to everything less than or equal to the amount given.
-
-/* Desktops */
-/* Medium Devices, Desktops */
 .container {
   border-style: solid;
   border-width: 1px;
 }
 
-@media only screen and (min-width : 600px) {
-  .container {
-
-  }
+.row.footer > p {
+  text-align: center;
 }
 
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 772px) {
   .container {
-    width: 992px
+    width: 772px
+  }
+  .row.footer > p {
+    text-align: left;;
   }
 }
 
@@ -30,7 +26,7 @@
     padding-bottom: 5px;
 }
 
-.col-md-6 {
+.col-sm-6 {
   padding-right: 15px;
   padding-left: 0px;
 }
@@ -48,28 +44,56 @@
 .row.contest{
   background-color: #eee;
 }
+.row.form{
+  background-color: #f8f8f8;
+}
 
 .control-label {
   font-weight: normal
 }
 
-.col-md-3.credit-card-input{
+.col-md-3.credit-card-input {
   padding-left: 0px;
-}
-
-.col-sm-3.credit-card-input{
-  padding-left: 0px;
+  padding-right: 5px;
 }
 
 .form-control{
-  padding: 6px;
+  padding: 6px 12px;
+  border-radius: 0px;
 }
+
+// .form-control:focus {
+//     border-color: #d9534f;
+// }
 
 .btn{
   padding: 6px 48px;
   border-radius: 0px;
 }
 
-a{
+#official-contest{
   text-decoration: underline;
+}
+
+.panel {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 5px;
+  background-color: #f8f8f8;
+}
+
+.row.footer > p{
+    margin: 0 0 2px;
+}
+
+.help-block {
+  visibility: hidden;
+}
+
+.has-error .help-block {
+  visibility: visible;
+}
+
+p.grey-text {
+  color: grey;
 }
