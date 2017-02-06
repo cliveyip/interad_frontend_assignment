@@ -1,12 +1,27 @@
-h1 {
-  color: tomato;
+
+// Min-Width: Refers to everything greater than or equal to the amount given.
+// Max-Width: Refers to everything less than or equal to the amount given.
+
+/* Desktops */
+/* Medium Devices, Desktops */
+.container {
+  border-style: solid;
+  border-width: 1px;
 }
 
-.container {
-    width: 600px;
-    border-style: solid;
-    border-width: 1px;
+@media only screen and (min-width : 600px) {
+  .container {
+
+  }
 }
+
+@media only screen and (min-width : 992px) {
+  .container {
+    width: 992px
+  }
+}
+
+
 
 .row {
     padding-right: 15px;
@@ -42,6 +57,19 @@ h1 {
   padding-left: 0px;
 }
 
+.col-sm-3.credit-card-input{
+  padding-left: 0px;
+}
+
 .form-control{
   padding: 6px;
+}
+
+.btn{
+  padding: 6px 48px;
+  border-radius: 0px;
+}
+
+a{
+  text-decoration: underline;
 }
